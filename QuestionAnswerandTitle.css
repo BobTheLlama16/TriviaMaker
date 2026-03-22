@@ -1,0 +1,75 @@
+/* Universal Styling */
+    * {
+      font-family: "shantell-sans-bouncy";
+      color: #5cf5d6;
+      box-sizing: border-box;
+    }
+
+    /* BODY STYLE */
+
+    body {
+      background-color: blanchedalmond;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    main {
+      width: 100%;
+    }
+
+    .GenInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    label, input {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 600px;
+      height: 50px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+
+   #buttonstyle {
+    color: #5cf5d6;
+    width: 200px;
+    height: 75px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: black;
+    padding: auto;
+
+ }
+
+
+ /* Styling Title Page Along With SearchBar */ 
+ #theme {
+  margin-bottom: px;
+ }
+ #Title-P {
+
+    font-size: 50px;
+    
+    
+ }

@@ -1,0 +1,26 @@
+
+* {
+ 
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "shantell-sans-bouncy";
+  background-color:blanchedalmond;
+
+  text-decoration: none;
+
+}
+
+#DoneButton {
+  display: block;
+  margin: auto;
+  padding: 0;
+  transform: translateY(300px);
+  font-size: 45px;
+  border-radius: 25px;
+  background-color: aliceblue;
+  color:#00FFCC;
+  border-width: 1px;
+  position: relative;
+  z-index: -1;
+}

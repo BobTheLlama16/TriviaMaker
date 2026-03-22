@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Pop</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xkt8wwm.css">
+    <link rel="stylesheet" href="/Fonts/Border.css">
+    <link rel="icon" type="image/x-icon" href="Logo.ico">
+</head>
+<body>
+    
+    <audio id="bgMusic" loop autoplay>
+        <source src="ACNH.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <header>
+        <nav class="NavBar">
+            <ul class="NavList">
+                <li><a style="background: white;" href="ActualTrivia.html">Start Making Your Trivia</a></li>
+                <!-- <li><a style="background: white;" href="Library.html">Library</a></li> -->
+                <li id="CenterContainer" style="background-color: white;">QUIZ POP</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="container">
+            <img src="question-mark-question.gif" alt="Question Mark">
+            <h2 id="BottomText">QUIZ POP</h2>
+        </section>
+    </main>
+
+    <script>
+        // Ensure audio plays even if autoplay is blocked
+        window.addEventListener('DOMContentLoaded', function () {
+            const audio = document.getElementById('bgMusic');
+
+            // Some browsers block autoplay until user interaction
+            // We'll attempt to play, and if blocked, add a user interaction fallback
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(function () {
+                    // If autoplay fails, wait for user interaction
+                    const startAudio = () => {
+                        audio.play();
+                        document.removeEventListener('click', startAudio);
+                    };
+                    document.addEventListener('click', startAudio);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

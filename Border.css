@@ -1,0 +1,89 @@
+/* Main Body Styling */
+* {
+     background-color: blanchedalmond;
+     font-family:"shantell-sans-bouncy" ;
+     padding:0%;
+     margin:0;
+
+}
+
+header {
+    margin-top: 0;
+    margin-top: 0px;
+    position: relative;
+}
+
+/* NAVBAR STYLING */
+
+.NavBar {
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px; 
+    box-shadow: 0 4px 14px; 
+}
+
+.NavList {
+gap: 30px;
+list-style-type: none; /* Removes Bullet Points */ 
+background-color: white;
+border: solid white 7px;
+border-radius: 0px;
+font-size: 20px;
+}
+
+.NavList a{
+     text-decoration: none;
+     border-radius: 0px;
+     
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+
+#TriviaPop {
+    border: 10px  solid aquamarine ; 
+    text-align: center;
+    font-family: "shantell-sans-bouncy";
+    font-size: 50px;
+    color: lemonchiffon;
+    display: inline block;
+    position: sticky;
+    top: 0;
+}
+
+
+
+#logo {
+  justify-content: center;
+}
+
+li  {
+    display: inline;
+    border: solid aquamarine;
+    display: inline;
+}
+
+
+li:nth-child(1) {
+    float: right
+}
+
+.container {
+    text-align: center;
+}
+
+#BottomText {
+    text-align: center;
+    font-size: 35px;
+}
+
+#CenterContainer {
+    margin: 1px;
+    text-align: center;
+    
+}
